@@ -1,5 +1,5 @@
 //
-//  InputAccessoryViewController.h
+//  KeyboardBar.h
 //  KeyboardInputView
 //
 //  Created by Brian Mancini on 10/4/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InputAccessoryViewController : UIInputViewController
+@interface KeyboardBar : UIView
+
+@property (strong, nonatomic) UITextView *textView;
 
 @end

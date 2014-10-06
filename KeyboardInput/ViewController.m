@@ -7,34 +7,41 @@
 //
 
 #import "ViewController.h"
-#import "VieWController2.h"
+#import "CustomView.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) UIButton *button;
+@property (strong, nonatomic) CustomView *view;
 
 @end
 
 @implementation ViewController
 
-- (void) loadView {
-    [super loadView];
-    
-    self.title = @"Main";
+// Override loadView so we can use CustomView that implements
+// inputAccessoryView. Also set the view as the first responder
+// so that it displays the inputAccessoryView on load.
+- (void)loadView {
+    self.title = @"View";
+        
+    self.view = [[CustomView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self.view becomeFirstResponder];
     
-    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didTouchAdd)];
-    self.navigationItem.rightBarButtonItem = nextButton;
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTouchView)];
+    [self.view addGestureRecognizer:recognizer];
 }
 
--(void)didTouchAdd {
-    ViewController2 *viewController2 = [[ViewController2 alloc]init];
-    
-    // When presented as navigation, it's busted up
-    [self showViewController:viewController2 sender:self];
-    
-    // When presented modally, it works fine...
-    //[self presentViewController:viewController2 animated:true completion:nil];
+
+// Dissmiss the keyboard on view touches by making
+// the view the first responder
+- (void)didTouchView {
+    [self.view becomeFirstResponder];
+}
+
+
+// This view will successfully deallocate
+- (void)dealloc {
+    NSLog(@"ViewController:delloc");
 }
 
 @end

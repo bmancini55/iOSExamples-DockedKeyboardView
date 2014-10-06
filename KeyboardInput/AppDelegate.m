@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "HomeController.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    ViewController *viewController = [[ViewController alloc]init];
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:viewController];
+    HomeController *controller = [[HomeController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller];
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = navController;

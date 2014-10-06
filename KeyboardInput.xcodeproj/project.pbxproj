@@ -7,31 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3513B3FB19E2DBB7001174D0 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3513B3FA19E2DBB7001174D0 /* HomeController.m */; };
+		354FFEC119E3180E00FD38EE /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354FFEC019E3180E00FD38EE /* CustomView.m */; };
 		35EB771019E0878D004B4EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770719E0878D004B4EAD /* AppDelegate.m */; };
-		35EB771119E0878D004B4EAD /* InputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770919E0878D004B4EAD /* InputAccessoryView.m */; };
-		35EB771219E0878D004B4EAD /* InputAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770B19E0878D004B4EAD /* InputAccessoryViewController.m */; };
-		35EB771319E0878D004B4EAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770D19E0878D004B4EAD /* ViewController.m */; };
-		35EB771419E0878D004B4EAD /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770F19E0878D004B4EAD /* ViewController2.m */; };
+		35EB771119E0878D004B4EAD /* KeyboardBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770919E0878D004B4EAD /* KeyboardBar.m */; };
+		35EB771419E0878D004B4EAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB770F19E0878D004B4EAD /* ViewController.m */; };
 		35EB771619E0879F004B4EAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35EB771519E0879F004B4EAD /* Images.xcassets */; };
 		35EB771919E087B7004B4EAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35EB771719E087B7004B4EAD /* Info.plist */; };
 		35EB771A19E087B7004B4EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB771819E087B7004B4EAD /* main.m */; };
+		35EB772019E1807B004B4EAD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB771F19E1807B004B4EAD /* TableViewController.m */; };
+		35EB772319E180C6004B4EAD /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB772219E180C6004B4EAD /* CustomTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3513B3F919E2DBB7001174D0 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = KeyboardInput/HomeController.h; sourceTree = SOURCE_ROOT; };
+		3513B3FA19E2DBB7001174D0 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = KeyboardInput/HomeController.m; sourceTree = SOURCE_ROOT; };
+		354FFEBF19E3180E00FD38EE /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomView.h; path = KeyboardInput/CustomView.h; sourceTree = SOURCE_ROOT; };
+		354FFEC019E3180E00FD38EE /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomView.m; path = KeyboardInput/CustomView.m; sourceTree = SOURCE_ROOT; };
 		35AAB7E019DF9D19003314F4 /* KeyboardInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EB770619E0878D004B4EAD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KeyboardInput/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		35EB770719E0878D004B4EAD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KeyboardInput/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		35EB770819E0878D004B4EAD /* InputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputAccessoryView.h; path = KeyboardInput/InputAccessoryView.h; sourceTree = SOURCE_ROOT; };
-		35EB770919E0878D004B4EAD /* InputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputAccessoryView.m; path = KeyboardInput/InputAccessoryView.m; sourceTree = SOURCE_ROOT; };
-		35EB770A19E0878D004B4EAD /* InputAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputAccessoryViewController.h; path = KeyboardInput/InputAccessoryViewController.h; sourceTree = SOURCE_ROOT; };
-		35EB770B19E0878D004B4EAD /* InputAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputAccessoryViewController.m; path = KeyboardInput/InputAccessoryViewController.m; sourceTree = SOURCE_ROOT; };
-		35EB770C19E0878D004B4EAD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = KeyboardInput/ViewController.h; sourceTree = SOURCE_ROOT; };
-		35EB770D19E0878D004B4EAD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = KeyboardInput/ViewController.m; sourceTree = SOURCE_ROOT; };
-		35EB770E19E0878D004B4EAD /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = KeyboardInput/ViewController2.h; sourceTree = SOURCE_ROOT; };
-		35EB770F19E0878D004B4EAD /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = KeyboardInput/ViewController2.m; sourceTree = SOURCE_ROOT; };
+		35EB770819E0878D004B4EAD /* KeyboardBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardBar.h; path = KeyboardInput/KeyboardBar.h; sourceTree = SOURCE_ROOT; };
+		35EB770919E0878D004B4EAD /* KeyboardBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardBar.m; path = KeyboardInput/KeyboardBar.m; sourceTree = SOURCE_ROOT; };
+		35EB770E19E0878D004B4EAD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = KeyboardInput/ViewController.h; sourceTree = SOURCE_ROOT; };
+		35EB770F19E0878D004B4EAD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = KeyboardInput/ViewController.m; sourceTree = SOURCE_ROOT; };
 		35EB771519E0879F004B4EAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KeyboardInput/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		35EB771719E087B7004B4EAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KeyboardInput/Info.plist; sourceTree = SOURCE_ROOT; };
 		35EB771819E087B7004B4EAD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KeyboardInput/main.m; sourceTree = SOURCE_ROOT; };
+		35EB771E19E1807B004B4EAD /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = KeyboardInput/TableViewController.h; sourceTree = SOURCE_ROOT; };
+		35EB771F19E1807B004B4EAD /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = KeyboardInput/TableViewController.m; sourceTree = SOURCE_ROOT; };
+		35EB772119E180C6004B4EAD /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableView.h; path = KeyboardInput/CustomTableView.h; sourceTree = SOURCE_ROOT; };
+		35EB772219E180C6004B4EAD /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableView.m; path = KeyboardInput/CustomTableView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354FFEC219E3235E00FD38EE /* ViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				354FFEBF19E3180E00FD38EE /* CustomView.h */,
+				354FFEC019E3180E00FD38EE /* CustomView.m */,
+				35EB770E19E0878D004B4EAD /* ViewController.h */,
+				35EB770F19E0878D004B4EAD /* ViewController.m */,
+			);
+			name = ViewExample;
+			sourceTree = "<group>";
+		};
+		354FFEC319E3238200FD38EE /* TableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				35EB772119E180C6004B4EAD /* CustomTableView.h */,
+				35EB772219E180C6004B4EAD /* CustomTableView.m */,
+				35EB771E19E1807B004B4EAD /* TableViewController.h */,
+				35EB771F19E1807B004B4EAD /* TableViewController.m */,
+			);
+			name = TableViewExample;
+			sourceTree = "<group>";
+		};
 		35AAB7D719DF9D19003314F4 = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +92,14 @@
 		35AAB7E219DF9D19003314F4 /* KeyboardInput */ = {
 			isa = PBXGroup;
 			children = (
+				354FFEC219E3235E00FD38EE /* ViewExample */,
+				354FFEC319E3238200FD38EE /* TableViewExample */,
+				35EB770819E0878D004B4EAD /* KeyboardBar.h */,
+				35EB770919E0878D004B4EAD /* KeyboardBar.m */,
 				35EB770619E0878D004B4EAD /* AppDelegate.h */,
 				35EB770719E0878D004B4EAD /* AppDelegate.m */,
-				35EB770819E0878D004B4EAD /* InputAccessoryView.h */,
-				35EB770919E0878D004B4EAD /* InputAccessoryView.m */,
-				35EB770A19E0878D004B4EAD /* InputAccessoryViewController.h */,
-				35EB770B19E0878D004B4EAD /* InputAccessoryViewController.m */,
-				35EB770C19E0878D004B4EAD /* ViewController.h */,
-				35EB770D19E0878D004B4EAD /* ViewController.m */,
-				35EB770E19E0878D004B4EAD /* ViewController2.h */,
-				35EB770F19E0878D004B4EAD /* ViewController2.m */,
+				3513B3F919E2DBB7001174D0 /* HomeController.h */,
+				3513B3FA19E2DBB7001174D0 /* HomeController.m */,
 				35EB771519E0879F004B4EAD /* Images.xcassets */,
 				35AAB7E319DF9D19003314F4 /* Supporting Files */,
 			);
@@ -159,11 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35EB771219E0878D004B4EAD /* InputAccessoryViewController.m in Sources */,
-				35EB771419E0878D004B4EAD /* ViewController2.m in Sources */,
-				35EB771319E0878D004B4EAD /* ViewController.m in Sources */,
-				35EB771119E0878D004B4EAD /* InputAccessoryView.m in Sources */,
+				3513B3FB19E2DBB7001174D0 /* HomeController.m in Sources */,
+				35EB771419E0878D004B4EAD /* ViewController.m in Sources */,
+				35EB772019E1807B004B4EAD /* TableViewController.m in Sources */,
+				35EB771119E0878D004B4EAD /* KeyboardBar.m in Sources */,
 				35EB771A19E087B7004B4EAD /* main.m in Sources */,
+				354FFEC119E3180E00FD38EE /* CustomView.m in Sources */,
+				35EB772319E180C6004B4EAD /* CustomTableView.m in Sources */,
 				35EB771019E0878D004B4EAD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
