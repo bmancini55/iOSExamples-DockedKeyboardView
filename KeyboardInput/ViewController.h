@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeyboardBar.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <KeyboardBarDelegate>
 
 @end

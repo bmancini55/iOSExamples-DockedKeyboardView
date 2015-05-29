@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeyboardBar.h"
 
 @interface CustomView : UIView
+
+@property (weak, nonatomic) id<KeyboardBarDelegate> keyboardBarDelegate;
 
 @end

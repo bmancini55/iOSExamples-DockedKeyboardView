@@ -27,12 +27,27 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view becomeFirstResponder];
     
+    // Pass the current controller as the keyboardBarDelegate
+    ((CustomView *)self.view).keyboardBarDelegate = self;
+    
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTouchView)];
     [self.view addGestureRecognizer:recognizer];
 }
 
 
-// Dissmiss the keyboard on view touches by making
+#pragma KeyboardBarDelegate
+
+// Handle keyboard bar event by creating an alert that contains
+// the text from the keyboard bar. In reality, this would do something more useful
+- (void)keyboardBar:(KeyboardBar *)keyboardBar sendText:(NSString *)text {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Keyboard Text" message:text delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+    [alert show];
+}
+
+
+#pragma Check dealloc
+
+// Dismiss the keyboard on view touches by making
 // the view the first responder
 - (void)didTouchView {
     [self.view becomeFirstResponder];

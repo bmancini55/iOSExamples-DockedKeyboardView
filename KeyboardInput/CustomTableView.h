@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeyboardBar.h"
 
 @interface CustomTableView : UITableView
+
+@property (weak, nonatomic) id<KeyboardBarDelegate> keyboardBarDelegate;
 
 @end

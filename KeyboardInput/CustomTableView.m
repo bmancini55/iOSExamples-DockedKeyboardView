@@ -28,7 +28,7 @@
 // an instance of KeyboardBar
 - (UIView *)inputAccessoryView {
     if(!_inputAccessoryView) {
-        _inputAccessoryView = [[KeyboardBar alloc] init];
+        _inputAccessoryView = [[KeyboardBar alloc] initWithDelegate:self.keyboardBarDelegate];
     }
     return _inputAccessoryView;
 }

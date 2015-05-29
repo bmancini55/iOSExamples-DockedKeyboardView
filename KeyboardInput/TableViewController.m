@@ -27,6 +27,9 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView becomeFirstResponder];
     
+    // Pass the current controller as the keyboardBarDelegate
+    ((CustomTableView *)self.tableView).keyboardBarDelegate = self;
+    
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTouchView)];
     [self.view addGestureRecognizer:recognizer];
 }
@@ -56,6 +59,15 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%lu", indexPath.row];
     return cell;
+}
+
+#pragma KeyboardBarDelegate
+
+// Handle keyboard bar event by creating an alert that contains
+// the text from the keyboard bar. In reality, this would do something more useful
+- (void)keyboardBar:(KeyboardBar *)keyboardBar sendText:(NSString *)text {
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Keyboard Text" message:text delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+    [alert show];
 }
 
 #pragma Check dealloc
